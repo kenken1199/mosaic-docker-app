@@ -25,7 +25,7 @@ def mosaic(img, rect, size):
     return img2
 
 def mosaic_edit(img_array , row_picture_file):
-    cascade_file = "/code/project/static/haarcascade_frontalface_alt.xml"
+    cascade_file = "/code/code/project/static/haarcascade_frontalface_alt.xml"
     cascade = cv2.CascadeClassifier(cascade_file)
     picture_fn = row_picture_file.filename
     picture_path = os.path.join(current_app.root_path, 'static/after_image', picture_fn)
