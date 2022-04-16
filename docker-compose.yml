@@ -1,8 +1,0 @@
-version: '3'
-services:
-  web:
-    build: .
-    volumes:
-    - ./code:/code
-    tty: true
-    command: python3 ~/code/server.py
