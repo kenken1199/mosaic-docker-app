@@ -17,12 +17,11 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
 
-
   deploy: # 任意の名前をお選びください。
     docker:
       - image: cimg/python:3.10.1
     steps:
-    - checkout
+      - checkout
       - setup_remote_docker:
           version: 19.03.13
       - heroku/install
