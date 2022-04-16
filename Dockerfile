@@ -10,4 +10,4 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
 ADD . /code/
-CMD ["python", "server.py"]
+CMD ["python", "~/code/server.py"]
